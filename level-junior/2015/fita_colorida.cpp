@@ -1,6 +1,8 @@
 /*
 Problem: Colored Tape
 Contest: OBI 2015 - Level Junior
+Topics: Arrays, Implementation, Simulation
+Link: https://olimpiada.ic.unicamp.br/pratique/pj/2015/f1/fita/
 
 Idea: 
 For each non-colored tape, compute the distance to the nearest zero on both the left and right sides.
