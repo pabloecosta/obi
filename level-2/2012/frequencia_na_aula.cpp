@@ -1,3 +1,14 @@
+/*
+Problem: Frequência na Aula / School Frequency
+Contest: OBI 2012 - Level 2
+Topics: Implementation, Arrays
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2012/f1/frequencia/
+
+Idea:
+Read the attendance list and mark each identifier that appears.
+Finally, count how many identifiers were marked, which corresponds to the
+number of distinct students present.
+*/
 
 #include <iostream>
 
