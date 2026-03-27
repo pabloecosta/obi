@@ -1,4 +1,15 @@
+/*
+Problem: Expressões / Expressions
+Contest: OBI 2011 - Level 2
+Topics: Stacks
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2011/f2/expressoes/
 
+Idea:
+Use a stack to validate the expression.
+Push opening brackets ('(', '[', '{') and for each closing bracket,
+check if it matches the top of the stack. If not, the expression is invalid.
+At the end, the stack must be empty.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -11,7 +22,7 @@ int main(){
     vector<char> saida(t);
 
     for(int i = 0; i < t; i++){
-        stack<int> expres;
+        stack<char> expres;
         string s;
         cin >> s;
 
