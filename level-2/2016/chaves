@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    int n;
+    cin >> n;
+    cin.ignore();
+
+    char saida;
+
+    stack<char> chaves;
+
+    for(int i = 0; i < n; i++){
+
+        string s;
+        getline(cin, s);
+
+        for(char c : s){
+
+            if(c=='{') chaves.push(c);
+            else if(c=='}'){
+                if(chaves.empty()==true){
+                    saida = 'N';
+                }
+                else if(chaves.top()=='{'){
+                    chaves.pop();
+                }
+            }
+        }
+    }
+
+  if(!chaves.empty()) saida = 'N';
+  
+    cout << saida;
+}
