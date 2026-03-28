@@ -1,3 +1,14 @@
+/*
+Problem: Copa do Mundo / World Cup
+Contest: OBI 2010 - Level 1
+Topics: Queues
+Link: https://olimpiada.ic.unicamp.br/pratique/p1/2010/f1/copa/
+
+Idea: Simulate the knockout tournament using a queue.
+Initially, enqueue teams 'A' to 'P'. For each match, dequeue the first
+two teams, compare their scores, and enqueue the winner back.
+At the end, the remaining team in the queue is the champion.
+*/
 
 
 #include <bits/stdc++.h>
