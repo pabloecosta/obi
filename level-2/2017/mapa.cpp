@@ -1,4 +1,11 @@
+/*
+Problem: Mapa / Map 
+Contest: OBI 2017 - Level 2
+Topics: BFS, Grid
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2017/f2/mapa/
 
+Idea: Using BFS to find the current position of Hermione on the given grid.
+*/
 
 #include <bits/stdc++.h>
 
