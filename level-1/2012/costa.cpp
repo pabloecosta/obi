@@ -1,4 +1,15 @@
+/*
+Problem: Costa / Coast
+Contest: OBI 2012 - Level 1
+Topics: Grid
+Link: https://olimpiada.ic.unicamp.br/pratique/p1/2012/f2/costa/
 
+Idea: For each '#' in a m x n grid, check its 4 adjacent cells.
+If at least one adjacent cell is '.' or outside the grid, then this cell is part of the coast.
+The borders of the grid are considered water.
+At the end, compute how many '#' cells are part of the coast.
+p.s: '#' stands for ground while '.' stands for water.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
