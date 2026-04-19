@@ -1,4 +1,13 @@
+/*
+Problem: Toca do Saci / Saci's lair
+Contest: OBI 2016 - Level 2
+Topics: Grid, Simulation
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2016/f1/toca-saci/
 
+Idea: Compute how many rooms are necessary to pass by to find the exit of Saci's lair.
+Starting from the exit, (number 3) we need to follow a path made by numbers 1 untill reach
+number 2 in the grid. For each number 1 passed by, we add 1 unit to the rooms counter.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
