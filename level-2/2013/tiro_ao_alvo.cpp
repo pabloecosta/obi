@@ -1,4 +1,13 @@
+/*
+Problem: Tiro ao Alvo / Target Shooting
+Contest: OBI 2013 - Level 2
+Topics: Geometry, Binary Search
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2013/f1/alvo/
 
+Idea: For each shot on the target, compute how many points Juquinha scores.
+The scoring works as follows: for each circle where the shot is contained, Juquinha earns one point.
+Finally, compute the total score.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
