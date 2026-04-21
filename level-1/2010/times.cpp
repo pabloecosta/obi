@@ -1,3 +1,11 @@
+/*
+Problem: Times / Teams
+Contest: OBI 2010 - Level 1
+Topics: Priority Queue
+Link: https://olimpiada.ic.unicamp.br/pratique/p1/2010/f1/times/
+
+Idea: Sort players by skill using a priority queue and distribute them among teams.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -16,16 +24,16 @@ int main(){
     }
     
     for(int i = 1; i <= n; i++){
-        times[i%t].push((pq.top()).second);
+       times[(i-1)%t + 1].push((pq.top()).second);
         pq.pop();
     }
     
     for(int i = 1; i <= t; i++){
         
         cout << "Time" << " " << i << endl;
-        while(!times[i%t].empty()){
-            cout << times[i%t].top() << endl;
-            times[i%t].pop();
+        while(!times[(i-1)%t + 1].empty()){
+            cout << times[(i-1)%t + 1].top() << endl;
+            times[(i-1)%t + 1].pop();
         }
         cout << "\n";
         
