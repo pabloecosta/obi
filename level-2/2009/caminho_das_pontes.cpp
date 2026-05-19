@@ -1,3 +1,14 @@
+/*
+Problem: Caminho das Pontes
+Contest: OBI 2009 - Level 2
+Topics: Dijkstra
+Link: https://olimpiada.ic.unicamp.br/pratique/p2/2009/f1/pontes/
+
+Idea:
+Model the bridges as edges, pillars as vertices and missing boards as edge weights.
+Use Dijkstra's algorithm to compute the minimum amount of missing boards Pedrinho must jump 
+over to reach the other side of the cliff.
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
